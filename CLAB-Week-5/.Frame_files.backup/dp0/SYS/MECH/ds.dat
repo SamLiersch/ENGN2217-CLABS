@@ -2,8 +2,8 @@
 /config,noeldb,1     ! force off writing results to database
 *get,_wallstrt,active,,time,wall
 ! ANSYS input file written by Workbench version 2023 R1
-! File used for geometry attach: C:\Users\Sam\Documents\ANUWork\ENGN2217\ENGN2217-CLABS\CLAB-Week-5\Frame_files\dp0\SYS\DM\SYS.agdb
-/title,Frame--Static Structural (A5)
+! File used for geometry attach: C:\Users\Sam\AppData\Local\Temp\WB_Sam_10708_3\wbnew_files\dp0\SYS\DM\SYS.agdb
+/title,wbnew--Static Structural (A5)
 ! ****** Begin Custom Load Command Snippet ******
 /COM, ACT Extensions:
 /COM,     LSDYNA, 2023.1
@@ -13,11 +13,11 @@
 /COM,
 ! ****** End   Custom Load Command Snippet ******
 *DIM,_wb_ProjectScratch_dir,string,248
-_wb_ProjectScratch_dir(1) = 'C:\Users\Sam\Documents\ANUWork\ENGN2217\ENGN2217-CLABS\CLAB-Week-5\_ProjectScratch\ScrCAA0\'
+_wb_ProjectScratch_dir(1) = 'C:\Users\Sam\AppData\Local\Temp\WB_Sam_10708_3\_ProjectScratch\ScrBE3B\'
 *DIM,_wb_SolverFiles_dir,string,248
-_wb_SolverFiles_dir(1) = 'C:\Users\Sam\Documents\ANUWork\ENGN2217\ENGN2217-CLABS\CLAB-Week-5\Frame_files\dp0\SYS\MECH\'
+_wb_SolverFiles_dir(1) = 'C:\Users\Sam\AppData\Local\Temp\WB_Sam_10708_3\wbnew_files\dp0\SYS\MECH\'
 *DIM,_wb_userfiles_dir,string,248
-_wb_userfiles_dir(1) = 'C:\Users\Sam\Documents\ANUWork\ENGN2217\ENGN2217-CLABS\CLAB-Week-5\Frame_files\user_files\'
+_wb_userfiles_dir(1) = 'C:\Users\Sam\AppData\Local\Temp\WB_Sam_10708_3\wbnew_files\user_files\'
 /com,--- Data in consistent MKS units. See Solving Units in the help system for more information.
 /units,MKS
 /nopr
@@ -425,43 +425,43 @@ MP,UMID,10,59002a79-71c2-428e-906b-55d7dbee100e
 /wb,mat,end                !  done sending materials
 /com,*********** Send Beam Properties ***********
 SECTYPE,1,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,2,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,3,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,4,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,5,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,6,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,7,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,8,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,9,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 SECTYPE,10,BEAM,CTUB
-SECDATA,0.103,0.109
+SECDATA,9.63e-002,0.109
 secoffset,cent
 
 !************************* Model Summary ********************

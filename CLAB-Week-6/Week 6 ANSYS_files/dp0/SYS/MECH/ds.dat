@@ -1,0 +1,590 @@
+/batch
+/config,noeldb,1     ! force off writing results to database
+*get,_wallstrt,active,,time,wall
+! ANSYS input file written by Workbench version 2023 R1
+! File used for geometry attach: C:\Users\Sam\Documents\ANUWork\ENGN2217\ENGN2217-CLABS\CLAB-Week-6\Week 6 ANSYS_files\dp0\SYS\DM\SYS.agdb
+/title,Week 6 ANSYS--Static Structural (A5)
+! ****** Begin Custom Load Command Snippet ******
+/COM, ACT Extensions:
+/COM,     LSDYNA, 2023.1
+/COM,     5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+/COM,/COM,     ANSYSMotion, 2023.1
+/COM,     20180725-3f81-49eb-9f31-41364844c769, wbex
+/COM,
+! ****** End   Custom Load Command Snippet ******
+*DIM,_wb_ProjectScratch_dir,string,248
+_wb_ProjectScratch_dir(1) = 'C:\Users\Sam\Documents\ANUWork\ENGN2217\ENGN2217-CLABS\CLAB-Week-6\_ProjectScratch\Scr8341\'
+*DIM,_wb_SolverFiles_dir,string,248
+_wb_SolverFiles_dir(1) = 'C:\Users\Sam\Documents\ANUWork\ENGN2217\ENGN2217-CLABS\CLAB-Week-6\Week 6 ANSYS_files\dp0\SYS\MECH\'
+*DIM,_wb_userfiles_dir,string,248
+_wb_userfiles_dir(1) = 'C:\Users\Sam\Documents\ANUWork\ENGN2217\ENGN2217-CLABS\CLAB-Week-6\Week 6 ANSYS_files\user_files\'
+/com,--- Data in consistent MKS units. See Solving Units in the help system for more information.
+/units,MKS
+/nopr
+/wb,file,start              !  signify a WB generated input file
+/prep7
+! Turn off shape checking because checks already performed inside WB mesher.
+! See help system for more information.
+SHPP,OFF,,NOWARN
+/nolist
+etcon,set             ! allow ANSYS to choose best KEYOP's for 180x elements, resets any applicable keyopt to MAPDL defaults
+/com,*********** Nodes for the whole assembly ***********
+nblock,3,,126
+(1i9,3e20.9e3)
+        1     0.000000000E+00     0.000000000E+00     0.000000000E+00
+        2     6.350000000E-01     1.016000000E+00     0.000000000E+00
+        3     6.350000000E-02     1.016000000E-01     0.000000000E+00
+        4     1.270000000E-01     2.032000000E-01     0.000000000E+00
+        5     1.905000000E-01     3.048000000E-01     0.000000000E+00
+        6     2.540000000E-01     4.064000000E-01     0.000000000E+00
+        7     3.175000000E-01     5.080000000E-01     0.000000000E+00
+        8     3.810000000E-01     6.096000000E-01     0.000000000E+00
+        9     4.445000000E-01     7.112000000E-01     0.000000000E+00
+       10     5.080000000E-01     8.128000000E-01     0.000000000E+00
+       11     5.715000000E-01     9.144000000E-01     0.000000000E+00
+       12     1.270000000E+00     0.000000000E+00     0.000000000E+00
+       13     1.270000000E-01     0.000000000E+00     0.000000000E+00
+       14     2.540000000E-01     0.000000000E+00     0.000000000E+00
+       15     3.810000000E-01     0.000000000E+00     0.000000000E+00
+       16     5.080000000E-01     0.000000000E+00     0.000000000E+00
+       17     6.350000000E-01     0.000000000E+00     0.000000000E+00
+       18     7.620000000E-01     0.000000000E+00     0.000000000E+00
+       19     8.890000000E-01     0.000000000E+00     0.000000000E+00
+       20     1.016000000E+00     0.000000000E+00     0.000000000E+00
+       21     1.143000000E+00     0.000000000E+00     0.000000000E+00
+       22     2.032000000E+00     7.112000000E-01     0.000000000E+00
+       23     1.365250000E+00     8.890000000E-02     0.000000000E+00
+       24     1.460500000E+00     1.778000000E-01     0.000000000E+00
+       25     1.555750000E+00     2.667000000E-01     0.000000000E+00
+       26     1.651000000E+00     3.556000000E-01     0.000000000E+00
+       27     1.746250000E+00     4.445000000E-01     0.000000000E+00
+       28     1.841500000E+00     5.334000000E-01     0.000000000E+00
+       29     1.936750000E+00     6.223000000E-01     0.000000000E+00
+       30     1.905000000E+00     1.016000000E+00     0.000000000E+00
+       31     1.947333333E+00     9.144000000E-01     0.000000000E+00
+       32     1.989666667E+00     8.128000000E-01     0.000000000E+00
+       33     2.413000000E+00     0.000000000E+00     0.000000000E+00
+       34     2.086428571E+00     6.096000000E-01     0.000000000E+00
+       35     2.140857143E+00     5.080000000E-01     0.000000000E+00
+       36     2.195285714E+00     4.064000000E-01     0.000000000E+00
+       37     2.249714286E+00     3.048000000E-01     0.000000000E+00
+       38     2.304142857E+00     2.032000000E-01     0.000000000E+00
+       39     2.358571429E+00     1.016000000E-01     0.000000000E+00
+       40     7.620000000E-01     1.016000000E+00     0.000000000E+00
+       41     8.890000000E-01     1.016000000E+00     0.000000000E+00
+       42     1.016000000E+00     1.016000000E+00     0.000000000E+00
+       43     1.143000000E+00     1.016000000E+00     0.000000000E+00
+       44     1.270000000E+00     1.016000000E+00     0.000000000E+00
+       45     1.397000000E+00     1.016000000E+00     0.000000000E+00
+       46     1.524000000E+00     1.016000000E+00     0.000000000E+00
+       47     1.651000000E+00     1.016000000E+00     0.000000000E+00
+       48     1.778000000E+00     1.016000000E+00     0.000000000E+00
+       49     6.985000000E-01     9.144000000E-01     0.000000000E+00
+       50     7.620000000E-01     8.128000000E-01     0.000000000E+00
+       51     8.255000000E-01     7.112000000E-01     0.000000000E+00
+       52     8.890000000E-01     6.096000000E-01     0.000000000E+00
+       53     9.525000000E-01     5.080000000E-01     0.000000000E+00
+       54     1.016000000E+00     4.064000000E-01     0.000000000E+00
+       55     1.079500000E+00     3.048000000E-01     0.000000000E+00
+       56     1.143000000E+00     2.032000000E-01     0.000000000E+00
+       57     1.206500000E+00     1.016000000E-01     0.000000000E+00
+       58     3.175000000E-02     5.080000000E-02     1.198115604E-01
+       59     9.525000000E-02     1.524000000E-01     1.198115604E-01
+       60     1.587500000E-01     2.540000000E-01     1.198115604E-01
+       61     2.222500000E-01     3.556000000E-01     1.198115604E-01
+       62     2.857500000E-01     4.572000000E-01     1.198115604E-01
+       63     3.492500000E-01     5.588000000E-01     1.198115604E-01
+       64     4.127500000E-01     6.604000000E-01     1.198115604E-01
+       65     4.762500000E-01     7.620000000E-01     1.198115604E-01
+       66     5.397500000E-01     8.636000000E-01     1.198115604E-01
+       67     6.032500000E-01     9.652000000E-01     1.198115604E-01
+       68     6.350000000E-02     0.000000000E+00     1.270000000E-01
+       69     1.905000000E-01     0.000000000E+00     1.270000000E-01
+       70     3.175000000E-01     0.000000000E+00     1.270000000E-01
+       71     4.445000000E-01     0.000000000E+00     1.270000000E-01
+       72     5.715000000E-01     0.000000000E+00     1.270000000E-01
+       73     6.985000000E-01     0.000000000E+00     1.270000000E-01
+       74     8.255000000E-01     0.000000000E+00     1.270000000E-01
+       75     9.525000000E-01     0.000000000E+00     1.270000000E-01
+       76     1.079500000E+00     0.000000000E+00     1.270000000E-01
+       77     1.206500000E+00     0.000000000E+00     1.270000000E-01
+       78     1.317625000E+00     4.445000000E-02     1.302911068E-01
+       79     1.412875000E+00     1.333500000E-01     1.302911068E-01
+       80     1.508125000E+00     2.222500000E-01     1.302911068E-01
+       81     1.603375000E+00     3.111500000E-01     1.302911068E-01
+       82     1.698625000E+00     4.000500000E-01     1.302911068E-01
+       83     1.793875000E+00     4.889500000E-01     1.302911068E-01
+       84     1.889125000E+00     5.778500000E-01     1.302911068E-01
+       85     1.984375000E+00     6.667500000E-01     1.302911068E-01
+       86     1.926166667E+00     9.652000000E-01     1.100666667E-01
+       87     1.968500000E+00     8.636000000E-01     1.100666667E-01
+       88     2.010833333E+00     7.620000000E-01     1.100666667E-01
+       89     2.059214286E+00     6.604000000E-01     1.152607018E-01
+       90     2.113642857E+00     5.588000000E-01     1.152607018E-01
+       91     2.168071429E+00     4.572000000E-01     1.152607018E-01
+       92     2.222500000E+00     3.556000000E-01     1.152607018E-01
+       93     2.276928571E+00     2.540000000E-01     1.152607018E-01
+       94     2.331357143E+00     1.524000000E-01     1.152607018E-01
+       95     2.385785714E+00     5.080000000E-02     1.152607018E-01
+       96     6.985000000E-01     1.016000000E+00     1.270000000E-01
+       97     8.255000000E-01     1.016000000E+00     1.270000000E-01
+       98     9.525000000E-01     1.016000000E+00     1.270000000E-01
+       99     1.079500000E+00     1.016000000E+00     1.270000000E-01
+      100     1.206500000E+00     1.016000000E+00     1.270000000E-01
+      101     1.333500000E+00     1.016000000E+00     1.270000000E-01
+      102     1.460500000E+00     1.016000000E+00     1.270000000E-01
+      103     1.587500000E+00     1.016000000E+00     1.270000000E-01
+      104     1.714500000E+00     1.016000000E+00     1.270000000E-01
+      105     1.841500000E+00     1.016000000E+00     1.270000000E-01
+      106     6.667500000E-01     9.652000000E-01     1.198115604E-01
+      107     7.302500000E-01     8.636000000E-01     1.198115604E-01
+      108     7.937500000E-01     7.620000000E-01     1.198115604E-01
+      109     8.572500000E-01     6.604000000E-01     1.198115604E-01
+      110     9.207500000E-01     5.588000000E-01     1.198115604E-01
+      111     9.842500000E-01     4.572000000E-01     1.198115604E-01
+      112     1.047750000E+00     3.556000000E-01     1.198115604E-01
+      113     1.111250000E+00     2.540000000E-01     1.198115604E-01
+      114     1.174750000E+00     1.524000000E-01     1.198115604E-01
+      115     1.238250000E+00     5.080000000E-02     1.198115604E-01
+-1
+/wb,elem,start            !  set before creation of elements
+/com,*********** Elements for Body 1 "Line Body" ***********
+et,1,188
+keyo,1,3,2
+eblock,19,solid,,10
+(19i9)
+        1        1        1        1        0        0        0        0        3        0        1        1        3       58
+        1        1        1        1        0        0        0        0        3        0        2        3        4       59
+        1        1        1        1        0        0        0        0        3        0        3        4        5       60
+        1        1        1        1        0        0        0        0        3        0        4        5        6       61
+        1        1        1        1        0        0        0        0        3        0        5        6        7       62
+        1        1        1        1        0        0        0        0        3        0        6        7        8       63
+        1        1        1        1        0        0        0        0        3        0        7        8        9       64
+        1        1        1        1        0        0        0        0        3        0        8        9       10       65
+        1        1        1        1        0        0        0        0        3        0        9       10       11       66
+        1        1        1        1        0        0        0        0        3        0       10       11        2       67
+-1
+!Material Id = {E7FD3D96-DAA6-4C7B-839F-3225D3570D15}
+/com,*********** Elements for Body 2 "Line Body" ***********
+et,2,188
+keyo,2,3,2
+eblock,19,solid,,10
+(19i9)
+        2        2        2        2        0        0        0        0        3        0       11        1       13       68
+        2        2        2        2        0        0        0        0        3        0       12       13       14       69
+        2        2        2        2        0        0        0        0        3        0       13       14       15       70
+        2        2        2        2        0        0        0        0        3        0       14       15       16       71
+        2        2        2        2        0        0        0        0        3        0       15       16       17       72
+        2        2        2        2        0        0        0        0        3        0       16       17       18       73
+        2        2        2        2        0        0        0        0        3        0       17       18       19       74
+        2        2        2        2        0        0        0        0        3        0       18       19       20       75
+        2        2        2        2        0        0        0        0        3        0       19       20       21       76
+        2        2        2        2        0        0        0        0        3        0       20       21       12       77
+-1
+!Material Id = {509AD240-20BC-482B-91B8-C062894A2CD4}
+/com,*********** Elements for Body 3 "Line Body" ***********
+et,3,188
+keyo,3,3,2
+eblock,19,solid,,8
+(19i9)
+        3        3        3        3        0        0        0        0        3        0       21       12       23       78
+        3        3        3        3        0        0        0        0        3        0       22       23       24       79
+        3        3        3        3        0        0        0        0        3        0       23       24       25       80
+        3        3        3        3        0        0        0        0        3        0       24       25       26       81
+        3        3        3        3        0        0        0        0        3        0       25       26       27       82
+        3        3        3        3        0        0        0        0        3        0       26       27       28       83
+        3        3        3        3        0        0        0        0        3        0       27       28       29       84
+        3        3        3        3        0        0        0        0        3        0       28       29       22       85
+-1
+!Material Id = {8B6F48D9-0465-4188-A8AA-6059537EDE9C}
+/com,*********** Elements for Body 4 "Line Body" ***********
+et,4,188
+keyo,4,3,2
+eblock,19,solid,,3
+(19i9)
+        4        4        4        4        0        0        0        0        3        0       29       30       31       86
+        4        4        4        4        0        0        0        0        3        0       30       31       32       87
+        4        4        4        4        0        0        0        0        3        0       31       32       22       88
+-1
+!Material Id = {D98451E3-7050-4020-8533-73D21F1B2CCB}
+/com,*********** Elements for Body 5 "Line Body" ***********
+et,5,188
+keyo,5,3,2
+eblock,19,solid,,7
+(19i9)
+        5        5        5        5        0        0        0        0        3        0       32       22       34       89
+        5        5        5        5        0        0        0        0        3        0       33       34       35       90
+        5        5        5        5        0        0        0        0        3        0       34       35       36       91
+        5        5        5        5        0        0        0        0        3        0       35       36       37       92
+        5        5        5        5        0        0        0        0        3        0       36       37       38       93
+        5        5        5        5        0        0        0        0        3        0       37       38       39       94
+        5        5        5        5        0        0        0        0        3        0       38       39       33       95
+-1
+!Material Id = {0F55AC19-8E61-487B-A5B6-76896A147827}
+/com,*********** Elements for Body 6 "Line Body" ***********
+et,6,188
+keyo,6,3,2
+eblock,19,solid,,10
+(19i9)
+        6        6        6        6        0        0        0        0        3        0       39        2       40       96
+        6        6        6        6        0        0        0        0        3        0       40       40       41       97
+        6        6        6        6        0        0        0        0        3        0       41       41       42       98
+        6        6        6        6        0        0        0        0        3        0       42       42       43       99
+        6        6        6        6        0        0        0        0        3        0       43       43       44      100
+        6        6        6        6        0        0        0        0        3        0       44       44       45      101
+        6        6        6        6        0        0        0        0        3        0       45       45       46      102
+        6        6        6        6        0        0        0        0        3        0       46       46       47      103
+        6        6        6        6        0        0        0        0        3        0       47       47       48      104
+        6        6        6        6        0        0        0        0        3        0       48       48       30      105
+-1
+!Material Id = {2CAE6894-8A8C-416E-99F1-391A13D6DCE8}
+/com,*********** Elements for Body 7 "Line Body" ***********
+et,7,188
+keyo,7,3,2
+eblock,19,solid,,10
+(19i9)
+        7        7        7        7        0        0        0        0        3        0       49        2       49      106
+        7        7        7        7        0        0        0        0        3        0       50       49       50      107
+        7        7        7        7        0        0        0        0        3        0       51       50       51      108
+        7        7        7        7        0        0        0        0        3        0       52       51       52      109
+        7        7        7        7        0        0        0        0        3        0       53       52       53      110
+        7        7        7        7        0        0        0        0        3        0       54       53       54      111
+        7        7        7        7        0        0        0        0        3        0       55       54       55      112
+        7        7        7        7        0        0        0        0        3        0       56       55       56      113
+        7        7        7        7        0        0        0        0        3        0       57       56       57      114
+        7        7        7        7        0        0        0        0        3        0       58       57       12      115
+-1
+!Material Id = {20B737B8-075B-4FA6-A7FE-21F3C2999036}
+/wb,elem,end               !  done creating elements
+/com,*********** Send User Defined Coordinate System(s) ***********
+csys,0
+toffst,273.15,  ! Temperature offset from absolute zero
+/com,*********** Set Reference Temperature ***********
+tref,22.
+/wb,mat,start              !  starting to send materials
+/com,*********** Send Materials ***********
+Temperature = 'TEMP' ! Temperature
+MP,DENS,1,7850,	! kg m^-3
+MP,ALPX,1,1.2e-05,	! C^-1
+MP,C,1,434,	! J kg^-1 C^-1
+MP,KXX,1,60.5,	! W m^-1 C^-1
+MP,RSVX,1,1.7e-07,	! kg m^3 A^-2 s^-3
+MP,EX,1,200000000000,	! Pa
+MP,NUXY,1,0.3,
+MP,MURX,1,10000,
+MP,UVID,1,976025f2-5a24-4824-adab-47eb612e9074
+MP,UMID,1,59002a79-71c2-428e-906b-55d7dbee100e
+
+Temperature = 'TEMP' ! Temperature
+MP,DENS,2,7850,	! kg m^-3
+MP,ALPX,2,1.2e-05,	! C^-1
+MP,C,2,434,	! J kg^-1 C^-1
+MP,KXX,2,60.5,	! W m^-1 C^-1
+MP,RSVX,2,1.7e-07,	! kg m^3 A^-2 s^-3
+MP,EX,2,200000000000,	! Pa
+MP,NUXY,2,0.3,
+MP,MURX,2,10000,
+MP,UVID,2,976025f2-5a24-4824-adab-47eb612e9074
+MP,UMID,2,59002a79-71c2-428e-906b-55d7dbee100e
+
+Temperature = 'TEMP' ! Temperature
+MP,DENS,3,7850,	! kg m^-3
+MP,ALPX,3,1.2e-05,	! C^-1
+MP,C,3,434,	! J kg^-1 C^-1
+MP,KXX,3,60.5,	! W m^-1 C^-1
+MP,RSVX,3,1.7e-07,	! kg m^3 A^-2 s^-3
+MP,EX,3,200000000000,	! Pa
+MP,NUXY,3,0.3,
+MP,MURX,3,10000,
+MP,UVID,3,976025f2-5a24-4824-adab-47eb612e9074
+MP,UMID,3,59002a79-71c2-428e-906b-55d7dbee100e
+
+Temperature = 'TEMP' ! Temperature
+MP,DENS,4,7850,	! kg m^-3
+MP,ALPX,4,1.2e-05,	! C^-1
+MP,C,4,434,	! J kg^-1 C^-1
+MP,KXX,4,60.5,	! W m^-1 C^-1
+MP,RSVX,4,1.7e-07,	! kg m^3 A^-2 s^-3
+MP,EX,4,200000000000,	! Pa
+MP,NUXY,4,0.3,
+MP,MURX,4,10000,
+MP,UVID,4,976025f2-5a24-4824-adab-47eb612e9074
+MP,UMID,4,59002a79-71c2-428e-906b-55d7dbee100e
+
+Temperature = 'TEMP' ! Temperature
+MP,DENS,5,7850,	! kg m^-3
+MP,ALPX,5,1.2e-05,	! C^-1
+MP,C,5,434,	! J kg^-1 C^-1
+MP,KXX,5,60.5,	! W m^-1 C^-1
+MP,RSVX,5,1.7e-07,	! kg m^3 A^-2 s^-3
+MP,EX,5,200000000000,	! Pa
+MP,NUXY,5,0.3,
+MP,MURX,5,10000,
+MP,UVID,5,976025f2-5a24-4824-adab-47eb612e9074
+MP,UMID,5,59002a79-71c2-428e-906b-55d7dbee100e
+
+Temperature = 'TEMP' ! Temperature
+MP,DENS,6,7850,	! kg m^-3
+MP,ALPX,6,1.2e-05,	! C^-1
+MP,C,6,434,	! J kg^-1 C^-1
+MP,KXX,6,60.5,	! W m^-1 C^-1
+MP,RSVX,6,1.7e-07,	! kg m^3 A^-2 s^-3
+MP,EX,6,200000000000,	! Pa
+MP,NUXY,6,0.3,
+MP,MURX,6,10000,
+MP,UVID,6,976025f2-5a24-4824-adab-47eb612e9074
+MP,UMID,6,59002a79-71c2-428e-906b-55d7dbee100e
+
+Temperature = 'TEMP' ! Temperature
+MP,DENS,7,7850,	! kg m^-3
+MP,ALPX,7,1.2e-05,	! C^-1
+MP,C,7,434,	! J kg^-1 C^-1
+MP,KXX,7,60.5,	! W m^-1 C^-1
+MP,RSVX,7,1.7e-07,	! kg m^3 A^-2 s^-3
+MP,EX,7,200000000000,	! Pa
+MP,NUXY,7,0.3,
+MP,MURX,7,10000,
+MP,UVID,7,976025f2-5a24-4824-adab-47eb612e9074
+MP,UMID,7,59002a79-71c2-428e-906b-55d7dbee100e
+
+/wb,mat,end                !  done sending materials
+/com,*********** Send Beam Properties ***********
+SECTYPE,1,BEAM,CTUB
+SECDATA,1.06e-002,1.15e-002
+secoffset,cent
+
+SECTYPE,2,BEAM,CTUB
+SECDATA,1.33e-002,1.44e-002
+secoffset,cent
+
+SECTYPE,3,BEAM,CTUB
+SECDATA,1.33e-002,1.44e-002
+secoffset,cent
+
+SECTYPE,4,BEAM,CTUB
+SECDATA,4.e-003,6.66e-003
+secoffset,cent
+
+SECTYPE,5,BEAM,CTUB
+SECDATA,4.e-003,6.66e-003
+secoffset,cent
+
+SECTYPE,6,BEAM,CTUB
+SECDATA,1.06e-002,1.15e-002
+secoffset,cent
+
+SECTYPE,7,BEAM,CTUB
+SECDATA,1.33e-002,1.44e-002
+secoffset,cent
+
+!************************* Model Summary ********************
+!Line Body,	Structural Steel,	matid,	1
+!Line Body,	Structural Steel,	matid,	2
+!Line Body,	Structural Steel,	matid,	3
+!Line Body,	Structural Steel,	matid,	4
+!Line Body,	Structural Steel,	matid,	5
+!Line Body,	Structural Steel,	matid,	6
+!Line Body,	Structural Steel,	matid,	7
+!************************* End Model Summary ********************
+! get the diagonal of the bounding box. Needed later for other things
+*get,_xmin,node,,mnloc,x
+*get,_ymin,node,,mnloc,y
+*get,_zmin,node,,mnloc,z
+*get,_xmax,node,,mxloc,x
+*get,_ymax,node,,mxloc,y
+*get,_zmax,node,,mxloc,z
+_ASMDIAG=(_xmax-_xmin)*(_xmax-_xmin)+(_ymax-_ymin)*(_ymax-_ymin)+(_zmax-_zmin)*(_zmax-_zmin)
+_ASMDIAG=SQRT(_ASMDIAG)
+/wb,contact,start          !  starting to send contact
+/wb,contact,end            !  done creating contacts
+/golist
+/wb,load,start             !  starting to send loads
+/com,*********** Create Displacement Components For Use In Future MSUP or Multistage Analysis ******
+CMBLOCK,_CM53_DISP,NODE,        1
+(8i10)
+         1
+/com,*********** Create Displacement Components For Use In Future MSUP or Multistage Analysis ******
+CMBLOCK,_CM57_DISP,NODE,        1
+(8i10)
+        33
+/com,******* Constant Zero Displacement X *******
+CMBLOCK,_DISPZEROUX,NODE,        1
+(8i10)
+         1
+cmsel,s,_DISPZEROUX
+d,all,ux,0
+nsel,all
+/com,******* Constant Zero Displacement Y *******
+CMBLOCK,_DISPZEROUY,NODE,        2
+(8i10)
+         1        33
+cmsel,s,_DISPZEROUY
+d,all,uy,0
+nsel,all
+/com,******* Constant Zero Displacement Z *******
+CMBLOCK,_DISPZEROUZ,NODE,        2
+(8i10)
+         1        33
+cmsel,s,_DISPZEROUZ
+d,all,uz,0
+nsel,all
+/com,********** Rotational Supports X **********
+CMBLOCK,_ROTSUX ,NODE,        1
+(8i10)
+         1
+cmsel,s,_ROTSUX
+d,all,rotx,0
+nsel,all
+/com,*********** Define Vertex Force Using Follower Elements ***********
+et,8,201
+keyo,8,1,1           ! Keep the direction constant
+keyo,8,2,1           ! Apply Forces only, not moment
+mat,8
+real,8
+type,8
+en,59,2
+r,8
+rmod,8,1,1.0,              ! FX
+mat,9
+real,9
+type,8
+en,60,2
+r,9
+rmod,9,2,1.0,              ! FY
+mat,10
+real,10
+type,8
+en,61,2
+r,10
+rmod,10,3,1.0,              ! FZ
+/com,*********** Define Vertex Force Using Follower Elements ***********
+et,11,201
+keyo,11,1,1           ! Keep the direction constant
+keyo,11,2,1           ! Apply Forces only, not moment
+mat,11
+real,11
+type,11
+en,62,30
+r,11
+rmod,11,1,1.0,              ! FX
+mat,12
+real,12
+type,11
+en,63,30
+r,12
+rmod,12,2,1.0,              ! FY
+mat,13
+real,13
+type,11
+en,64,30
+r,13
+rmod,13,3,1.0,              ! FZ
+/gst,on,on
+fini
+*get,_numnode,node,0,count
+*get,_numelem,elem,0,count
+*get, _MAXELEMNUM, elem, 0, NUM, MAX
+*get, _MAXNODENUM, node, 0, NUM, MAX
+*get, _MAXELEMTYPE, etyp, 0, NUM, MAX
+*get, _MAXREALCONST, rcon, 0, NUM, MAX
+/go
+/wb,load,end               !  done creating loads
+/com,--- Number of total nodes = %_numnode%
+/com,--- Number of contact elements = 0
+/com,--- Number of spring elements = 0
+/com,--- Number of bearing elements = 0
+/com,--- Number of solid elements = 58
+/com,--- Number of condensed parts = 0
+/com,--- Number of total elements = %_numelem%
+*get,_wallbsol,active,,time,wall
+/com,****************************************************************************
+/com,*************************    SOLUTION       ********************************
+/com,****************************************************************************
+/solu
+antype,0                   ! static analysis
+_thickRatio=  0     ! Ratio of thick parts in the model
+eqsl,sparse,,,,,1
+cntr,print,1               ! print out contact info and also make no initial contact an error
+nldiag,cont,iter           ! print out contact info each equilibrium iteration
+rescontrol,linear,last           ! Turn on restart files due to future eigen analysis intent
+/com,****************************************************
+/com,******************* SOLVE FOR LS 1 OF 1 ****************
+esel,s,real,,8
+sfe,all,1,pres,1,0.
+esel,s,real,,9
+sfe,all,1,pres,1,-500.
+esel,s,real,,10
+sfe,all,1,pres,1,0.
+esel,s,real,,11
+sfe,all,1,pres,1,0.
+esel,s,real,,12
+sfe,all,1,pres,1,-100.
+esel,s,real,,13
+sfe,all,1,pres,1,0.
+esel,all
+/nopr
+/gopr
+nsub,1,1,1
+time,1.
+outres,erase
+outres,all,none
+outres,nsol,all,
+outres,rsol,all
+outres,eangl,all
+outres,etmp,all
+outres,veng,all
+outres,strs,all,
+outres,epel,all,
+outres,eppl,all,
+outres,cont,all,
+/nopr
+esel,s,type,,1
+esel,a,type,,2,7
+cm,_elmisc,elem
+esel,all
+/gopr
+outres,misc,all,_elmisc
+! *********** WB SOLVE COMMAND ***********
+! check interactive state
+*get,ANSINTER_,active,,int
+*if,ANSINTER_,ne,0,then
+/eof
+*endif
+solve
+/com *************** Write FE CONNECTORS ********* 
+CEWRITE,file,ce,,INTE
+/com,****************************************************
+/com,*************** FINISHED SOLVE FOR LS 1 *************
+*get,_wallasol,active,,time,wall
+/nopr
+*get,_numnode,node,0,count
+*get,_numelem,elem,0,count
+*get, _MAXELEMNUM, elem, 0, NUM, MAX
+*get, _MAXNODENUM, node, 0, NUM, MAX,,,INTERNAL
+*get, _MAXELEMTYPE, etyp, 0, NUM, MAX
+*get, _MAXREALCONST, rcon, 0, NUM, MAX
+*get,_NSOLTHREADS,active,0,ntfs
+*get,_NSOLPROCESSES,active,0,npfs
+/gopr
+/post1
+xmlo,ENCODING,ISO-8859-1
+xmlo,parm
+/xml,parm,xml
+fini
+/gopr
+*get,_walldone,active,,time,wall
+_preptime=(_wallbsol-_wallstrt)*3600
+_solvtime=(_wallasol-_wallbsol)*3600
+_posttime=(_walldone-_wallasol)*3600
+_totaltim=(_walldone-_wallstrt)*3600
+*get,_dlbratio,active,0,solu,dlbr
+*get,_combtime,active,0,solu,comb
+*get,_ssmode,active,0,solu,ssmm
+*get,_ndofs,active,0,solu,ndof
+/com,--- Total number of nodes = %_numnode%
+/com,--- Total number of elements = %_numelem%
+/com,--- Element load balance ratio = %_dlbratio%
+/com,--- Time to combine distributed files = %_combtime%
+/com,--- Sparse memory mode = %_ssmode%
+/com,--- Number of DOF = %_ndofs%
+/wb,file,end               ! done with WB generated input

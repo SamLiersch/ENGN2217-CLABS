@@ -1,0 +1,15 @@
+/COM,ANSYS RELEASE 2023 R1           BUILD 23.1      UP20221128       16:14:06
+
+ *** WARNING ***                         CP =       0.469   TIME= 16:14:07
+ Material number 8 (used by element 59) should normally have at least    
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       0.641   TIME= 16:14:07
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.641   TIME= 16:14:07
+ Material number 8 (used by element 59) should normally have at least    
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
